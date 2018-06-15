@@ -25,9 +25,9 @@ namespace gameStats
             }
         }
 
-        public static List<string[]> ReadGameResults(string fileName)
+        public static List<GameResult> ReadGameResults(string fileName)
         {
-            var allValues = new List<string[]>();
+            var allValues = new List<GameResult>();
             using (var reader = new StreamReader(fileName))
             {
                 // Remove the heading row from the CSV file
@@ -44,7 +44,15 @@ namespace gameStats
                         gameResult.GameDate = gameDate;
                     }
 
-                    allValues.Add(lineValues);
+                    gameResult.TeamName = lineValues[1];
+
+                    HomeOrAway homeOrAway;
+                    if (Enum.TryParse(lineValues[2], out homeOrAway))
+                    {
+                        gameResult.HomeOrAway = homeOrAway;
+                    }
+
+                    allValues.Add(gameResult);
                 }
             }
             return allValues;
