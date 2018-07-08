@@ -69,6 +69,12 @@ namespace gameStats
                     {
                         gameResult.ShotsOffGoal = parseInt;
                     }
+
+                    double possessionPercent;
+                    if (double.TryParse(lineValues[7], out possessionPercent))
+                    {
+                        gameResult.PossessionPercent = possessionPercent;
+                    }
                     allValues.Add(gameResult);
                 }
             }
