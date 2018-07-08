@@ -52,6 +52,23 @@ namespace gameStats
                         gameResult.HomeOrAway = homeOrAway;
                     }
 
+                    int parseInt;
+                    if (int.TryParse(lineValues[3], out parseInt))
+                    {
+                        gameResult.Goals = parseInt;
+                    }
+                    if (int.TryParse(lineValues[4], out parseInt))
+                    {
+                        gameResult.GoalAttempts = parseInt;
+                    }
+                    if (int.TryParse(lineValues[5], out parseInt))
+                    {
+                        gameResult.ShotsOnGoal = parseInt;
+                    }
+                    if (int.TryParse(lineValues[6], out parseInt))
+                    {
+                        gameResult.ShotsOffGoal = parseInt;
+                    }
                     allValues.Add(gameResult);
                 }
             }
