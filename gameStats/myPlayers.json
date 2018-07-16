@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "first_name": "David",
+        "last_name": "Wize",
+        "goals_scored": 3,
+        "team_name": "Badgers",
+        "favorite_percentage": "3.6",
+        "photo": "https://www.pexels.com/photo/brown-nipa-hut-on-body-of-water-1179156/",
+        "good_player": true
+    },
+    {
+        "id": 2,
+        "first_name": "Matt",
+        "last_name": "Ulmanner",
+        "goals_scored": 3,
+        "team_name": "Bikers",
+        "favorite_percentage": "3.6",
+        "photo": "https://www.pexels.com/photo/brown-nipa-hut-on-body-of-water-1179156/",
+        "good_player": true
+    },
+    {
+        "id": 3,
+        "first_name": "Naboo",
+        "last_name": "Uematsu",
+        "goals_scored": 2,
+        "team_name": "Fish",
+        "favorite_percentage": "3.6",
+        "photo": "https://www.pexels.com/photo/brown-nipa-hut-on-body-of-water-1179156/",
+        "good_player": false
+    },
+    {
+        "id": 4,
+        "first_name": "Koji",
+        "last_name": "Cando",
+        "goals_scored": 5,
+        "team_name": "Roll",
+        "favorite_percentage": "3.6",
+        "photo": "https://www.pexels.com/photo/brown-nipa-hut-on-body-of-water-1179156/",
+        "good_player": false
+    },
+]
